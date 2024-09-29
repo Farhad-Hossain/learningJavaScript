@@ -75,3 +75,5 @@ print(d)
 d = Date.parse("2024-09-29T22:50:33.600+06:00"); // Will return timestamp
 print( new Date(d) )
 
+print('End, Have a nice day')
+
