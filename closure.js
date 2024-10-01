@@ -21,14 +21,41 @@ function sayHiBye(firstName, lastName) {
 }
 sayHiBye("Farhad", "Hossain")
 
+// function makeCounter() {
+//     let count = 0;
+//     return function () {
+//         return count++;
+//     }
+// }
+// let counter = makeCounter()
+// print(counter())
+// print(counter())
+// print(counter())
+
+if (true) {
+    let phrase = 'Hello';
+}
+
 function makeCounter() {
     let count = 0;
-    return function () {
-        return count++;
+
+    return function() {
+        return ++count;
     }
 }
 let counter = makeCounter()
-print(counter())
-print(counter())
-print(counter())
+print( counter() )
+print( counter() )
+print( counter() )
+
+let value = "Sun Rise"
+function f() {
+    let value = "The closest value";
+
+    return function() {
+        print(value)
+    }
+}
+let g = f();
+g();
 
